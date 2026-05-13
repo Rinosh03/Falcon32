@@ -27,7 +27,6 @@
 #include "euler_angles.h"
 #include "drone_control.h"
 #include "stdio.h"
-#include "LPS22HH.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -101,12 +100,6 @@ lsm6dsr_handler imu_sensor =
 		.gpio_cs_port = LSM6DSR_CS_GPIO_Port,
 };
 
-lps22hh_handler pressure_sensor =
-{
-		.gpio_cs_pin = LP_S_22HH_CS_Pin,
-		.gpio_cs_port = LP_S_22HH_CS_GPIO_Port,
-		.spi_handler = &hspi2,
-};
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
 	if(htim == &htim3)
@@ -293,7 +286,6 @@ int main(void)
   HAL_Delay(100);
   lsm6dsr_read_data(&imu_sensor);
   HAL_Delay(100);
-  lps22hh_init(&pressure_sensor);
   drone_initialization(&drone);
   HAL_ADC_Start_IT(&hadc1);
   HAL_TIM_Base_Start_IT(&htim3);
@@ -689,20 +681,10 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(LP_S_22HH_CS_GPIO_Port, LP_S_22HH_CS_Pin, GPIO_PIN_SET);
-
-  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(LSM6DSR_CS_GPIO_Port, LSM6DSR_CS_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, LD2_Pin|LD1_Pin, GPIO_PIN_SET);
-
-  /*Configure GPIO pin : LP_S_22HH_CS_Pin */
-  GPIO_InitStruct.Pin = LP_S_22HH_CS_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(LP_S_22HH_CS_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : LSM6DSR_CS_Pin */
   GPIO_InitStruct.Pin = LSM6DSR_CS_Pin;
