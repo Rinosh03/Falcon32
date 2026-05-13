@@ -1,0 +1,17 @@
+14:11:34 **** Incremental Build of configuration Debug for project QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/drone_control.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/ST/ARM/DSP/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/drone_control.d" -MT"Core/Src/drone_control.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/drone_control.o"
+arm-none-eabi-gcc -o "QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT.elf" @"objects.list"  -l:libarm_cortexM4lf_math.a -mcpu=cortex-m4 -T"C:\Users\yerke\Dropbox\online course\GitHub\stm32-drone-fcu001v2\course_firmware\QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT.map" -Wl,--gc-sections -static -L../Middlewares/ST/ARM/DSP/Lib --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT.elf
+ 
+arm-none-eabi-size  QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT.elf 
+arm-none-eabi-objdump -h -S QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT.elf  > "QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT.list"
+   text	   data	    bss	    dec	    hex	filename
+  29164	    284	   2220	  31668	   7bb4	QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT.elf
+Finished building: default.size.stdout
+ 
+Finished building: QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT.list
+ 
+
+14:11:35 Build Finished. 0 errors, 0 warnings. (took 906ms)
+

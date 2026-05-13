@@ -1,0 +1,7 @@
+../Core/Src/LSM6DSR.c:4:13:activate_imu	16	static
+../Core/Src/LSM6DSR.c:9:13:deactivate_imu	16	static
+../Core/Src/LSM6DSR.c:14:13:lsm6dsr_read_reg	32	static
+../Core/Src/LSM6DSR.c:23:13:lsm6dsr_write_reg	16	static
+../Core/Src/LSM6DSR.c:31:22:lsm6dsr_init	40	static
+../Core/Src/LSM6DSR.c:105:6:lsm6dsr_read_data	32	static
+../Core/Src/LSM6DSR.c:117:23:lsm6dsr_free_fall	24	static

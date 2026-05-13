@@ -1,0 +1,10 @@
+15:30:10 **** Incremental Build of configuration Debug for project QUADCOPTER_MOTOR_CONTROL ****
+make -j20 all 
+arm-none-eabi-size  QUADCOPTER_MOTOR_CONTROL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11964	     32	   1640	  13636	   3544	QUADCOPTER_MOTOR_CONTROL.elf
+Finished building: default.size.stdout
+ 
+
+15:30:10 Build Finished. 0 errors, 0 warnings. (took 217ms)
+

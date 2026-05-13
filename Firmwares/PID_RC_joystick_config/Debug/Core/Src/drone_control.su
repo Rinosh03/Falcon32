@@ -1,0 +1,4 @@
+../Core/Src/drone_control.c:5:6:drone_initialization	16	static
+../Core/Src/drone_control.c:13:6:drone_update_angle	24	static
+../Core/Src/drone_control.c:18:6:drone_set_zero	16	static
+../Core/Src/drone_control.c:28:6:drone_apply_control	56	static

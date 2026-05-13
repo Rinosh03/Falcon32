@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:QUADCOPTER_MOTOR_CONTROL_ESC Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:QUADCOPTER_MOTOR_CONTROL Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:QUADCOPTER_MOTOR_CONTROL_IMU,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT_JOYSTICK Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT_JOYSTICK_PRESSURE Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:QUADCOPTER_MOTOR_CONTROL\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:QUADCOPTER_MOTOR_CONTROL\ Debug/activeLaunchTarget=null\:---

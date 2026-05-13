@@ -1,0 +1,12 @@
+13:23:14 **** Incremental Build of configuration Debug for project QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID ****
+make -j20 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4 -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/ST/ARM/DSP/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:29:10: fatal error: drone_control.h: No such file or directory
+   29 | #include "drone_control.h"
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+
+13:23:15 Build Failed. 2 errors, 0 warnings. (took 588ms)
+

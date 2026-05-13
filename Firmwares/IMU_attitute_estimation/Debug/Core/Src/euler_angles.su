@@ -1,0 +1,3 @@
+../Core/Src/euler_angles.c:6:6:acc_mag2euler	48	static
+../Core/Src/euler_angles.c:32:6:update_euler_gyro	24	static
+../Core/Src/euler_angles.c:88:6:complementary_filter_euler	64	static

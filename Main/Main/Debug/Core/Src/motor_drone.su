@@ -1,0 +1,2 @@
+../Core/Src/motor_drone.c:13:6:set_motor_voltage	32	static
+../Core/Src/motor_drone.c:46:6:update_bat_voltage	24	static

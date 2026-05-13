@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT/QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID.ioc&apos; to &apos;QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT.ioc&apos;" description="Rename resource &apos;QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID.ioc" name="QUADCOPTER_MOTOR_CONTROL_IMU_ATTITUDE_PID_FLIGHT.ioc" stamp="1752663572371" updateReferences="true"/>
+</session>

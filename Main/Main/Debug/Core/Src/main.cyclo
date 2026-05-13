@@ -1,0 +1,14 @@
+../Drivers/CMSIS/Include/core_cm4.h:2064:26:ITM_SendChar	4
+../Core/Src/main.c:110:6:HAL_TIM_PeriodElapsedCallback	3
+../Core/Src/main.c:139:6:HAL_TIM_IC_CaptureCallback	24
+../Core/Src/main.c:244:6:HAL_ADC_ConvCpltCallback	1
+../Core/Src/main.c:254:5:main	3
+../Core/Src/main.c:349:6:SystemClock_Config	3
+../Core/Src/main.c:395:13:MX_ADC1_Init	3
+../Core/Src/main.c:447:13:MX_SPI2_Init	2
+../Core/Src/main.c:485:13:MX_TIM2_Init	9
+../Core/Src/main.c:559:13:MX_TIM3_Init	4
+../Core/Src/main.c:604:13:MX_TIM4_Init	9
+../Core/Src/main.c:679:13:MX_GPIO_Init	1
+../Core/Src/main.c:726:5:_write	2
+../Core/Src/main.c:741:6:Error_Handler	1

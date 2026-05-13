@@ -1,0 +1,6 @@
+../Core/Src/LPS22HH.c:5:13:lps22hh_activate	1
+../Core/Src/LPS22HH.c:10:13:lps22hh_deactivate	1
+../Core/Src/LPS22HH.c:15:13:lps22hh_read_reg	1
+../Core/Src/LPS22HH.c:24:13:lps22hh_write_reg	1
+../Core/Src/LPS22HH.c:32:6:lps22hh_init	4
+../Core/Src/LPS22HH.c:61:6:lps22hh_estimate_altitude	2
